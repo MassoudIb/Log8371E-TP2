@@ -22,9 +22,9 @@ Expected: I think some login requests might fail while the database is stopped.
 
 
 
-Observed:
+Observed: With user1, all 1414 measured requests succeeded. However with user30, all 14 requests failed with HTTP 500 errors.
 
 
 
-What this shows: 
+What this shows: Keycloak continued working for the previously authenticated user, but the user who had never logged in could not authenticate while the database was stopped. This suggest that caching played a role. But, this does not prove that all authentication requests will work without the PostgreSQL database.
 

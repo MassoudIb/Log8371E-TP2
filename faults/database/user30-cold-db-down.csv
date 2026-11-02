@@ -1,0 +1,15 @@
+elapsed_s,response_ms,success,status_code,exception,phase
+4.055044,4054.391900,0,500,HTTPError,measurement
+4.347350,7.878700,0,500,HTTPError,measurement
+4.664242,8.436300,0,500,HTTPError,measurement
+4.960476,5.972800,0,500,HTTPError,measurement
+5.256029,5.408500,0,500,HTTPError,measurement
+5.532496,5.786100,0,500,HTTPError,measurement
+5.745721,6.332300,0,500,HTTPError,measurement
+6.045414,5.687500,0,500,HTTPError,measurement
+6.340616,5.630800,0,500,HTTPError,measurement
+6.483905,7.106300,0,500,HTTPError,measurement
+6.731841,5.183100,0,500,HTTPError,measurement
+6.977631,5.205900,0,500,HTTPError,measurement
+7.261977,6.064400,0,500,HTTPError,measurement
+7.566258,5.973600,0,500,HTTPError,measurement
