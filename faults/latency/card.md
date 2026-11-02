@@ -22,9 +22,11 @@ Expected: I expect the response time will be increasing when delay is added, but
 
 
 
-Observed: will complete after experiment.
+Observed: Without the delay, 1413 requests succeeded with a p95 of 201.96ms.
+
+With the delay experiment, 1198 requests succeeded with a p95 of 477.57ms. No errors were observed in both tests.
 
 
 
-What this shows: will complete after experiment.
+What this shows: Adding 300ms of delay made the logins requests slower. However, the system continue to work without errors during the experiment.
 
