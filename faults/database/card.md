@@ -2,7 +2,7 @@ FAULT CARD : Database Failure
 
 
 
-Steady-state claim: With 10 users, the error rate should stay below 1% during normal operation.
+Steady-state claim: With 10 users with PostgreSQL running normally, p95 response time stays below 220ms and the error rate should stay below 1% during normal operation.
 
 
 

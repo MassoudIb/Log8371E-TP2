@@ -2,11 +2,11 @@ FAULT CARD : Keycloak Restart
 
 
 
-Steady-stage claim: with 10 users, i expect the error rate to stay below 1% and the p95 time toe stay close to the baseline (around 200ms) before the fault.
+Steady-stage claim: Under normal operation with 10 users, i expect the error rate to stay below 1% and the p95 time to stay close to the baseline (around 200ms) before the fault.
 
 
 
-Fault: Restart Keyclock while Locust is running.
+Fault: Restart Keycloak while Locust is running.
 
 
 Blast radius: Only my local Docker test environment is affected. No real users are involved.

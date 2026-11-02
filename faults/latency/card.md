@@ -2,7 +2,7 @@ FAULT CARD : Proxy Latency
 
 
 
-Steady-state claim: With 10 users and no added delay, I expect the error rate to stay below 1%.
+Steady-state claim: With 10 users using proxy with no added delay, p95 response time stays below 220ms and I expect the error rate to stay below 1% during normal operation.
 
 
 
