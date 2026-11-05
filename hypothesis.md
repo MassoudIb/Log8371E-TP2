@@ -8,6 +8,5 @@ Intervention       : the one thing I will change is increasing the number of sim
 
 Falsifier          : what result would prove me wrong? If the response time stays almost the same and the number of requests per second nearly doubles, my hypothesis is probably wrong.
 
-I tested Keyclock with 20 users instead of 10 while keeping the other test settings the same. The p95 response ttime increased from 189.28ms to 230.27ms. The average response time
-increased from 170.60ms to 207.98 ms. No errors were observed.
-The results support my prediction that response times would increase with more users. However, the system also handled more requests, so we cannot conclude that Keyclock has reached the maximum capacity (bottleneck).
+I tested Keycloak with 20 users instead of 10 while keeping the other test settings the same. The p95 response time increased from 189.28ms to 
+230.27ms. The average response time increased from 170.60ms to 207.98 ms. No errors were observed. The results support my prediction that response times would increase with more users. However, the system also handled more requests, so we cannot conclude that Keycloak has reached the maximum capacity (bottleneck).

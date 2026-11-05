@@ -3,6 +3,34 @@
 Python 3.10+ and Docker Compose v2 required. Local disposable teaching stack only:
 hardcoded credentials, development mode, and loopback-bound ports; never deploy it.
 
+# Running the project on Windows
+I used Windows PowerShell and Docker Desktop to run this project.
+
+# Setup
+Open PowerShell in the project folder and run:
+```sh
+docker compose pull
+docker compose up -d
+py seed.py
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+New-Item -ItemType Directory -Force results
+```
+
+# Run a baseline test
+```sh
+$env:RAW_CSV="results/baseline-1.csv"
+$env:WARMUP_SECONDS="5"
+$env:USERNAME="user1"
+.\.venv\Scripts\python.exe -m locust -f locustfile.py --headless -u 10 -r 10 -t 35s --host http://127.0.0.1:8080
+```
+
+# Analyse the results
+```sh
+.\.venv\Scripts\python.exe analyse.py results/baseline-1.csv
+```
+Repeat the baseline test at least three times, using a different CSV filename for each run.
+
 ```sh
 docker compose pull
 docker compose up -d
